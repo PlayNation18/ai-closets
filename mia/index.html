@@ -1,6 +1,6 @@
 <!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mia's Wardrobe · Shop my closet</title><meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fdf8ef;--card:#ffffff;--ac:#c9a24b;--ac2:#f6ecd6;--tx:#3b3226;--r:14px}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:'Montserrat',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -8,7 +8,7 @@ header{text-align:center;padding:34px 18px 14px}header .em{font-size:34px}
 header h1{font-family:'Playfair Display',serif;font-weight:400;font-size:42px;margin:6px 0 2px;letter-spacing:.5px}
 header p{margin:4px 0;opacity:.8;font-size:15px}header .t{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--ac);font-weight:700}
 nav{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:8px;overflow-x:auto;padding:10px 14px;scrollbar-width:none;border-bottom:1px solid var(--ac2)}
-nav::-webkit-scrollbar{display:none}nav a{flex:none;text-decoration:none;color:var(--tx);background:var(--ac2);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600}
+nav::-webkit-scrollbar{display:none}nav a{cursor:pointer;flex:none;text-decoration:none;color:var(--tx);background:var(--ac2);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600}
 main{max-width:1100px;margin:0 auto;padding:6px 12px 30px}section{scroll-margin-top:60px}
 h2{font-family:'Playfair Display',serif;font-weight:400;font-size:26px;margin:26px 4px 12px}h2 span{font-family:'Montserrat',sans-serif;font-size:15px;opacity:.65}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:1000px){.grid{grid-template-columns:repeat(4,1fr)}}
@@ -22,7 +22,7 @@ footer{text-align:center;font-size:12px;opacity:.7;padding:20px 16px 34px;line-h
 </style></head><body>
 <header><div class="em">✨</div><div class="t">Shop my closet · Meine Lieblingsteile</div><h1>Mia's Wardrobe</h1>
 <p>glam essentials · Glam-Essentials</p><p style="font-size:13px">📍 Graz</p></header>
-<nav><a href="#oberteile">Tops</a><a href="#alltag">Everyday</a><a href="#jeans_hosen">Jeans &amp; Pants</a><a href="#roecke">Skirts</a><a href="#ausgehen_kleider">Going out &amp; Dresses</a><a href="#jacken_maentel">Jackets &amp; Coats</a><a href="#schuhe">Shoes</a><a href="#sport">Sport</a><a href="#socken">Socks</a><a href="#unterwaesche_lounge">Lingerie</a></nav><main><section id="oberteile"><h2>Tops <span>· Oberteile</span></h2><div class="grid"><article class="card"><div class="ph"><img src="img/oberteile_01_lounge_sculpt_korsett_top_steingrau.jpg" alt="Lounge Sculpt Korsett-Top – Steingrau" loading="lazy"></div>
+<nav><a role="button" tabindex="0" data-t="oberteile">Tops</a><a role="button" tabindex="0" data-t="alltag">Everyday</a><a role="button" tabindex="0" data-t="jeans_hosen">Jeans &amp; Pants</a><a role="button" tabindex="0" data-t="roecke">Skirts</a><a role="button" tabindex="0" data-t="ausgehen_kleider">Going out &amp; Dresses</a><a role="button" tabindex="0" data-t="jacken_maentel">Jackets &amp; Coats</a><a role="button" tabindex="0" data-t="schuhe">Shoes</a><a role="button" tabindex="0" data-t="sport">Sport</a><a role="button" tabindex="0" data-t="socken">Socks</a><a role="button" tabindex="0" data-t="unterwaesche_lounge">Lingerie</a></nav><script>document.querySelector('nav').addEventListener('click',function(e){var a=e.target.closest('[data-t]');if(a){document.getElementById(a.dataset.t).scrollIntoView({behavior:'smooth'});}});</script><main><section id="oberteile"><h2>Tops <span>· Oberteile</span></h2><div class="grid"><article class="card"><div class="ph"><img src="img/oberteile_01_lounge_sculpt_korsett_top_steingrau.jpg" alt="Lounge Sculpt Korsett-Top – Steingrau" loading="lazy"></div>
 <div class="info"><div class="shop">Lounge</div><h3>Lounge Sculpt Korsett-Top – Steingrau</h3><div class="sub">Steingrau</div>
 <div class="price">90,00 €</div><div class="btns"><a class="btn" href="https://de.lounge.com/products/sculpt-corset-top-stone" target="_blank" rel="noopener noreferrer">Shop ↗</a></div></div></article><article class="card"><div class="ph"><img src="img/oberteile_02_new_yorker_traegerloses_oberteil_black_art_03_01_1.jpg" alt="New Yorker Trägerloses Oberteil – Black" loading="lazy"></div>
 <div class="info"><div class="shop">New Yorker</div><h3>New Yorker Trägerloses Oberteil – Black</h3><div class="sub">Black (Schwarz)</div>
